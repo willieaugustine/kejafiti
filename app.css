@@ -70,3 +70,16 @@
     fill:none;
     stroke-width:2px;
 }
+.icon{
+    transition: opacity 0.3s, transform 0.3s;
+    transform-origin: 50% 50%;
+}
+icon--cross,
+.trigger--active .icon--grid{
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 1);
+}
+.trigger--active .icon--cross{
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+}
